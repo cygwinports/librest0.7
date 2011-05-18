@@ -1,0 +1,11 @@
+category: Web
+requires: librest0.7_0 libglib2.0-devel libsoup2.4-devel libsoup-gnome2.4-devel libxml2-devel
+external-source: librest0.7
+sdesc: "RESTful web services API library (development)"
+ldesc: "This library was designed to make it easier to access web 
+services that claim to be RESTful. It should be noted that the majority 
+of services don't actually adhere to the strict definition of RESTful. 
+Instead, their RESTful end point usually has an API that is just simpler 
+to use compared to other types of APIs they may support (XML-RPC, for 
+instance). It is this kind of API that this library is attempting to 
+support."
