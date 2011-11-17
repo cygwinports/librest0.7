@@ -3,9 +3,9 @@ inherit gnome2
 
 DESCRIPTION="RESTful web services API library"
 
-PATCH_URI="0.7.10-no-undefined.patch"
-
 PKG_NAMES="${PN}_0 ${PN}-devel girepository-Rest0.7"
 librest0_7_0_CONTENTS="usr/bin/*-0.7-0.dll usr/share/doc/"
 librest0_7_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
 girepository_Rest0_7_CONTENTS="usr/*/gir*/Rest*-0.7.*"
+
+CYGCONF_ARGS="--with-ca-certificates=/usr/ssl/certs/ca-bundle.crt"
