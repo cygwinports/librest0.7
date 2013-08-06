@@ -1,0 +1,21 @@
+ORIG_PN="rest"
+inherit gnome2
+
+NAME="librest0.7"
+VERSION=0.7.12
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="RESTful web services API library"
+DESCRIPTION="This library was designed to make it easier to access web
+services that claim to be RESTful. It should be noted that the majority of
+services don't actually adhere to the strict definition of RESTful. Instead,
+their RESTful end point usually has an API that is just simpler to use
+compared to other types of APIs they may support (XML-RPC, for instance).
+It is this kind of API that this library is attempting to support."
+
+PKG_NAMES="${NAME}_0 ${NAME}-devel girepository-Rest0.7"
+librest0_7_0_CONTENTS="usr/bin/*-0.7-0.dll usr/share/doc/"
+librest0_7_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+girepository_Rest0_7_CONTENTS="usr/*/gir*/Rest*-0.7.*"
+
+CYGCONF_ARGS="--with-ca-certificates=/usr/ssl/certs/ca-bundle.crt"
