@@ -2,7 +2,7 @@ ORIG_PN="rest"
 inherit gnome2
 
 NAME="librest0.7"
-VERSION=0.7.91
+VERSION=0.7.92
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="RESTful web services API library"
@@ -21,4 +21,4 @@ librest0_7_doc_CATEGORY="Doc"
 librest0_7_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_Rest0_7_CONTENTS="usr/*/gir*/Rest*-0.7.*"
 
-CYGCONF_ARGS="--with-ca-certificates=/usr/ssl/certs/ca-bundle.crt"
+CYGCONF_ARGS="--with-ca-certificates=/etc/pki/tls/certs/ca-bundle.crt"
