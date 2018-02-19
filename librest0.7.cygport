@@ -2,7 +2,7 @@ ORIG_PN="rest"
 inherit gnome2
 
 NAME="librest0.7"
-VERSION=0.8.0
+VERSION=0.8.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="RESTful web services API library"
